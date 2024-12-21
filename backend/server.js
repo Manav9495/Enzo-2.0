@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Hardcoded OpenAI API key
-const openaiApiKey = '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';  // Replace with your actual OpenAI API key
+const openaiApiKey = '';  // Replace with your actual OpenAI API key
 
 // Route to handle user input and get GPT response
 app.post('/get-response', async (req, res) => {
