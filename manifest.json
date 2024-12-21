@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Enzo AI Chatbot 2.0",
+  "description": "AI-powered chatbot that assists users in real-time.",
+  "version": "2.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icon/bot-icon.png",
+      "48": "icon/bot-icon.png",
+      "128": "icon/bot-icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content/content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icon/bot-icon.png",
+    "48": "icon/bot-icon.png",
+    "128": "icon/bot-icon.png"
+  }
+}
